@@ -1,13 +1,13 @@
 # 阿里云盘自动签到领取SVIP
-## ⭐⭐⭐自动签到脚本实现功能⭐⭐⭐
-## 利用金山文档每日任务自动签到
-## 签到完成后发送签到成功邮件提醒
-## 可实现多账号签到
-## 实现多账号签到给不同邮箱发送提醒
-## 新增给多账号发送邮件
-## 自定义每个账号签到提醒的接收邮箱
-## 自定义是否领取签到奖励
-## 每月末自动领取所有未领取奖励
+### ⭐⭐⭐自动签到脚本实现功能⭐⭐⭐
+### 利用金山文档每日任务自动签到
+### 签到完成后发送签到成功邮件提醒
+### 可实现多账号签到
+### 实现多账号签到给不同邮箱发送提醒
+### 新增给多账号发送邮件
+### 自定义每个账号签到提醒的接收邮箱
+### 自定义是否领取签到奖励
+### 每月末自动领取所有未领取奖励
 
 # 1.打开金山文档网页端，登录后，新建在线智能表格 https://www.kdocs.cn/latest
 ![1](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/0e0303be-a441-41df-95d0-44b3e3e3b698)
@@ -258,6 +258,7 @@ if (currentDay === lastDayOfMonth) {
 
   log("自动领取未领取奖励完成。");
 }
+
 ![5](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/48376ebb-651a-41f8-9673-e42ba1c1485f)
 # 6.取得阿里云盘token方法如下：先通过浏览器打开阿里云盘官网并登录网页版：https://www.aliyundrive.com/drive/ 登录成功后，打开开发者工具 ① 点击 Console进入控制台 ② 在控制台输入  JSON.parse(localStorage.token).refresh_token  复制返回的32位字符串，不要复制双引号
 ![6](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/b8a89b54-356b-4895-9bf7-541f3d140d36)
@@ -267,7 +268,10 @@ if (currentDay === lastDayOfMonth) {
 ![8](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/133f8dd8-b75e-47c2-a8e2-057f73e027de)
 # 9.在文档页，打开效率→高级开发→定时任务→创建任务，选择每天，确定一个合适的自动执行时间，选择你创建的脚本，点击确认
 ![9](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/8639c733-0dbb-46e9-96d5-6feb3b34f043)
-
-
 # PS: Token值会在一个月左右刷新一次，届时直接替换就可以了
+
+# 利用pushplus推送签到消息 https://www.pushplus.plus/
+![10](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/3b383356-7646-408c-84ac-c43a7e8440d8)
+![11](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/3e7996e9-f604-48a0-916e-b0d63cf9875c)
+
 
