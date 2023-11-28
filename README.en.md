@@ -1,4 +1,4 @@
-# 阿里云盘自动签到领取SVIP ⭐⭐⭐自动签到脚本实现功能⭐⭐⭐签到完成后发送签到成功提醒
+# ⭐⭐⭐阿里云盘自动签到领取SVIP 签到完成后发送签到成功提醒⭐⭐⭐
 ## 1.打开金山文档网页端，登录后，新建在线智能表格 https://www.kdocs.cn/latest
 ![1](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/0e0303be-a441-41df-95d0-44b3e3e3b698)
 ## 2.表格模板按照我发的如下格式给出(可以自己手打):然后选择效率→高级开发→AirScript脚本编辑器
