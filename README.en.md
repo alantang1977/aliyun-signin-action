@@ -9,15 +9,15 @@
 ### 自定义是否领取签到奖励
 ### 每月末自动领取所有未领取奖励
 
-# 1.打开金山文档网页端，登录后，新建在线智能表格 https://www.kdocs.cn/latest
+## 1.打开金山文档网页端，登录后，新建在线智能表格 https://www.kdocs.cn/latest
 ![1](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/0e0303be-a441-41df-95d0-44b3e3e3b698)
-# 2.表格模板按照我发的如下格式给出(可以自己手打):然后选择效率→高级开发→AirScript脚本编辑器
+## 2.表格模板按照我发的如下格式给出(可以自己手打):然后选择效率→高级开发→AirScript脚本编辑器
 ![2](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/f7db3429-c712-4700-a804-af88d9d8f6d3)
-# 3.选择创建脚本→文档共享脚本，可以重命名为(阿里云盘自动签到脚本)
+## 3.选择创建脚本→文档共享脚本，可以重命名为(阿里云盘自动签到脚本)
 ![3](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/fb558445-de19-4308-987b-b68a2ef2b15b)
-# 4.点击服务→添加服务→将三个服务全部添加
+## 4.点击服务→添加服务→将三个服务全部添加
 ![4](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/1d2238a6-7b1b-45c9-81ff-f710d87c5f7e)
-# 5.将自动签到代码复制到编辑器中，并点击保存，然后关闭脚本编辑器
+## 5.将自动签到代码复制到编辑器中，并点击保存，然后关闭脚本编辑器
 var myDate = new Date();
 var data_time = myDate.toLocaleDateString();
 
@@ -260,17 +260,17 @@ if (currentDay === lastDayOfMonth) {
 }
 
 ![5](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/48376ebb-651a-41f8-9673-e42ba1c1485f)
-# 6.取得阿里云盘token方法如下：先通过浏览器打开阿里云盘官网并登录网页版：https://www.aliyundrive.com/drive/ 登录成功后，打开开发者工具 ① 点击 Console进入控制台 ② 在控制台输入  JSON.parse(localStorage.token).refresh_token  复制返回的32位字符串，不要复制双引号
+## 6.取得阿里云盘token方法如下：先通过浏览器打开阿里云盘官网并登录网页版：https://www.aliyundrive.com/drive/ 登录成功后，打开开发者工具 点击 Console进入控制台 ② 在控制台输入  JSON.parse(localStorage.token).refresh_token  复制返回的32位字符串，不要复制双引号
 ![6](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/b8a89b54-356b-4895-9bf7-541f3d140d36)
-# 7.将刚才复制的refresh_token粘贴到表格A1列中，并自定义其他信息
+## 7.将刚才复制的refresh_token粘贴到表格A1列中，并自定义其他信息
 ![7](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/212ccb4f-211a-4410-941b-de6de0e0e195)
-# 8.打开脚本编辑器点击运行测试一下，如果出现运行成功日志，就可说明配置完成
+## 8.打开脚本编辑器点击运行测试一下，如果出现运行成功日志，就可说明配置完成
 ![8](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/133f8dd8-b75e-47c2-a8e2-057f73e027de)
 # 9.在文档页，打开效率→高级开发→定时任务→创建任务，选择每天，确定一个合适的自动执行时间，选择你创建的脚本，点击确认
 ![9](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/8639c733-0dbb-46e9-96d5-6feb3b34f043)
-# PS: Token值会在一个月左右刷新一次，届时直接替换就可以了
+## PS: Token值会在一个月左右刷新一次，届时直接替换就可以了
 
-# 利用pushplus推送签到消息 https://www.pushplus.plus/
+## 利用pushplus推送签到消息 https://www.pushplus.plus/
 ![10](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/3b383356-7646-408c-84ac-c43a7e8440d8)
 ![11](https://github.com/alantang1977/aliyun-signin-action/assets/107459091/3e7996e9-f604-48a0-916e-b0d63cf9875c)
 
